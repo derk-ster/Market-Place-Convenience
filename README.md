@@ -16,7 +16,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) with your browser (port **3001** so it doesn’t clash with other local apps on 3000).
+Open [http://localhost:3001](http://localhost:3001) with your browser (port **3001** so it doesn’t clash with other local apps on 3000). For a local production build, run `npm run build` then `npm start` (uses the `PORT` environment variable; defaults to **3000**).
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
