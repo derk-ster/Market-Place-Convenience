@@ -1,5 +1,4 @@
-@import "tw-animate-css";
-@import "shadcn/tailwind.css";
+/* Tailwind v3 only: do not @import tw-animate-css or shadcn/tailwind.css here — they use Tailwind v4 syntax and will break PostCSS so no utilities load. */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -16,24 +15,27 @@
     --font-sans: var(--font-sans);
   }
   :root {
-    --background: oklch(1 0 0);
-    --foreground: oklch(0.145 0 0);
-    --card: oklch(1 0 0);
-    --card-foreground: oklch(0.145 0 0);
-    --popover: oklch(1 0 0);
-    --popover-foreground: oklch(0.145 0 0);
-    --primary: oklch(0.205 0 0);
-    --primary-foreground: oklch(0.985 0 0);
-    --secondary: oklch(0.97 0 0);
-    --secondary-foreground: oklch(0.205 0 0);
-    --muted: oklch(0.97 0 0);
-    --muted-foreground: oklch(0.556 0 0);
-    --accent: oklch(0.97 0 0);
-    --accent-foreground: oklch(0.205 0 0);
+    --background: #ffffff;
+    --foreground: oklch(0.22 0.02 170);
+    --card: #ffffff;
+    --card-foreground: oklch(0.22 0.02 170);
+    --popover: #ffffff;
+    --popover-foreground: oklch(0.22 0.02 170);
+    /* Deep emerald #065f46 */
+    --primary: #065f46;
+    --primary-foreground: #ffffff;
+    --secondary: oklch(0.96 0.02 170);
+    --secondary-foreground: #065f46;
+    --muted: oklch(0.96 0.015 170);
+    --muted-foreground: oklch(0.45 0.03 170);
+    /* Soft mint */
+    --accent: #d1fae5;
+    --accent-foreground: #065f46;
     --destructive: oklch(0.577 0.245 27.325);
+    --destructive-foreground: oklch(0.985 0 0);
     --border: oklch(0.922 0 0);
     --input: oklch(0.922 0 0);
-    --ring: oklch(0.708 0 0);
+    --ring: #065f46;
     --chart-1: oklch(0.87 0 0);
     --chart-2: oklch(0.556 0 0);
     --chart-3: oklch(0.439 0 0);
@@ -83,7 +85,7 @@
     --sidebar-ring: oklch(0.556 0 0);
   }
   * {
-    @apply border-border outline-ring/50;
+    @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
